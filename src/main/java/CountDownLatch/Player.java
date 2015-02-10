@@ -24,15 +24,16 @@ public class Player implements Runnable {
 
     @Override
     public void run() {
-
-        begin.countDown();
-
         try {
-            Thread.sleep(1000);
-            System.out.println("运动员:" + i + "到达终点!");
-            end.countDown();
+            begin.await();
+            Thread.sleep((long)(Math.random()*10000));
+            System.out.println("运动员:" + i + " 到达终点");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        finally {
+            end.countDown();
+        }
+
     }
 }
