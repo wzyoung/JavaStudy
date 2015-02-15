@@ -1,10 +1,10 @@
 package TwoWaysOfObjectCompare.UseComparable;
 
-import com.google.common.base.MoreObjects;
 
 import java.util.Arrays;
 
 /**
+ * use comparable
  * Created by wzyoung on 2015/2/12.
  */
 public class TestClient {
