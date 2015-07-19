@@ -10,6 +10,7 @@ import java.util.concurrent.CountDownLatch;
 public class Player implements Runnable {
 
 
+    // test
     private CountDownLatch begin;
 
     private CountDownLatch end;
